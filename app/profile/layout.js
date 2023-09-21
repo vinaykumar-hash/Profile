@@ -4,6 +4,7 @@ import Navbar from "@/components/Navbar"
 import Project from "@/components/Project"
 import Scroll from "@/components/Scroll"
 import SecondPage from "@/components/SecondPage"
+import { SimpleComp } from "@/components/SimpleComp"
 import Sparkle from "@/components/Sparkle"
 import ToolsPage from "@/components/ToolsPage"
 export default function ProfileLayout(){
@@ -15,6 +16,7 @@ export default function ProfileLayout(){
             <ToolsPage/>
             <Project/>
             <ContactPage/>
+            <SimpleComp/>
             <Sparkle/>
             <Scroll/>
         </div>
