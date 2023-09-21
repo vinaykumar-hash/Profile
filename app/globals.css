@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: fff;
+}
+.HeroText{
+  background: linear-gradient(to right, #7AE7C7,#118AB2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  transition: all linear 100ms;
+  animation-name: HueRotate;
+  animation-duration: 60s;
+  animation-iteration-count: infinite;
+}
+.SecondPageG1{
+  background: linear-gradient(to right, #FE5F55 50%,#EC0B43);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.SecondPageG2{
+  background: linear-gradient(to right,#7AE7C7 25%, #118AB2);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.HueRotate{
+  background: linear-gradient(to right, #118AB2,#7AE7C7);
+  animation: HueRotate 60s infinite;
+}
+@keyframes HueRotate{
+  0%{
+    filter: hue-rotate(0deg);
+  }100%{
+    filter: hue-rotate(360deg);
+  }
+}
+.Sparkle{
+  z-index: 10;
+}
+.SLS{
+  letter-spacing: -0.065rem;
+}
+.SLSS{
+  letter-spacing: -0.0375rem;
+}
+.SecondPage{
+  background-color: #222;
+}
+.LetsTalkButton{
+  background-color: rgb(255,255,255,0.3);
+  backdrop-filter: blur(10px);
+  display: inline-block;
+  position: inherit;
+  z-index: 1;
+}
+.Testpage{
+  margin: 0;
+  overflow: hidden;
+  perspective: 100px; 
+}
+.container{
+  width: 100vw;
+  height: 100vh;
+  border-radius: 999px;
+  position: relative;
+  /* background: linear-gradient(45deg, black, white),
+              linear-gradient(-45deg, #E8E8E8 25%, transparent 25%),
+              linear-gradient(45deg, transparent 75%, #E8E8E8 75%),
+              linear-gradient(-45deg, transparent 75%, #E8E8E8 75%); */
+  background: linear-gradient(to right , #409426 1px, transparent 1px), linear-gradient(to bottom , #409426 1px , transparent 1px);
+  background-size: 30px 30px; /* Adjust the size of the boxes */
+  background-position: 0 0, 0 15px, 15px -15px, -15px 0px; /* Adjust the positions */
+  transform: rotateX(45deg) rotateY(0deg) rotateZ(0deg); /* Rotate the container */
+  animation: rotate 60s linear infinite;
+  overflow: hidden;
+
+}
+
+@keyframes rotate {
+  0% {
+      transform: rotateX(45deg) rotateY(0deg) rotateZ(0deg);
+  }
+  100% {
+      transform: rotateX(45deg) rotateY(0deg) rotateZ(360deg); /* Rotate a full circle */
+  }
+}
+.InProgress::before{
+  content: "";
+  position: absolute;
+  color: #222;
+  background-color: white;
+  font-weight: lighter;
+  transition: all linear 100ms;
+  opacity: 50%;
+  backdrop-filter: blur(20px);
+}
+.InProgress:hover::before{
+  content: "InProgress(Populating Data)";
+  padding: 0.4rem 1rem;
+}
+.ContactFormIn{
+  transition: all linear 100ms;
+}
+.RevealBG{
+  transform: translateX(-50%) Scale(0);
+  height: 100px;
+  width: 100px;
+  border-radius: 100px;
+}
+.MyEmail{
+  transform: translateY(0px);
+  transition: all ease-in-out 500ms;
+}
+
+.ProjectButton::before{
+  z-index: -999;
+  position: absolute;
+  transition: all linear 100ms;
+  content: "";
+  height: 110%;
+  width: 150%;
+  background-color: #7AE7C7;
+  padding: 0.5rem 10px;
+  left: 50%;
+  transform: scaleY(0) translateX(-50%);
+}
+.ProjectButton:hover:before{
+  transform: scaleY(1) translateX(-50%);
+}
+.ContactButton::before{
+  z-index: -999;
+  position: absolute;
+  transition: all linear 100ms;
+  content: "";
+  height: 110%;
+  width: 150%;
+  background-color: #7AE7C7;
+  padding: 0.5rem 10px;
+  left: 50%;
+  transform: scaleY(0) translateX(-50%);
+}
+.ContactButton:hover:before{
+  transform: scaleY(1) translateX(-50%);
+}
+.AboutButton::before{
+  z-index: -999;
+  position: absolute;
+  transition: all linear 100ms;
+  content: "";
+  height: 110%;
+  width: 150%;
+  background-color: #7AE7C7;
+  padding: 0.5rem 10px;
+  left: 50%;
+  transform: scaleY(0) translateX(-50%);
+}
+.AboutButton:hover:before{
+  transform: scaleY(1) translateX(-50%);
+}
+
