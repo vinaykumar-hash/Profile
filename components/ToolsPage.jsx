@@ -3,7 +3,7 @@ import React from 'react'
 const ToolsPage = () => {
   return (
     <div className='w-screen h-auto flex justify-center items-center flex-col sm:px-60 px-8 gap-10 py-10' style={{background:"#222"}}>
-        <h1 className='text-4xl text-white font-medium'>Tool's In Hand</h1>
+        <h1 className='text-4xl text-white font-medium'>Tool&lsquo;s In Hand</h1>
         <div className='transition-all flex flex-wrap justify-center items-center w-full gap-10 bg-white/10 rounded-lg py-10 px-10'>
         <img className='saturate-0 hover:saturate-100 ' width="50" height="50" src="https://img.icons8.com/color/48/javascript--v1.png" alt="javascript--v1"/>
         <img className='saturate-0 hover:saturate-100 ' width="50" height="50" src="https://img.icons8.com/color/48/python--v1.png" alt="python--v1"/>
