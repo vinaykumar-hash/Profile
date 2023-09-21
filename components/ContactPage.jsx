@@ -102,7 +102,7 @@ const ContactPage = () => {
         {/* <img width="80" height="80" src="https://img.icons8.com/office/80/secured-letter--v1.png" alt="secured-letter--v1"/> */}
         <div className=''></div>
         <div className='ContactForm h-full w-full flex justify-center items-center absolute'>
-            <div className='text-white opacity-0 scale-0 SuccessMessage transition-all'>&apos;Successfully Send&apos;</div>
+            <div className='text-white opacity-0 scale-0 SuccessMessage transition-all'>&quot;Successfully Send&quot;</div>
             <div className='ContactFormIn absolute h-96 w-3/5 bg-gray-950 border-2 border-contactColor-100 z-40 p-8'>
                 <h3 className='text-4xl text-contactColor-100 font-semibold SLS'>Contact</h3>
                 <div className='h-full w-full flex justify-start items-center flex-col mt-6 relative'>
